@@ -31,6 +31,8 @@
 
 \runninghead{WiSLAM: Improving Indoor Localization Systems through SLAM using WiFi} % A shortened article title to appear in the running head, leave this command empty for no running head
 
+\footertext{\textit{Initiation to scientific Research Group N°1, X2025} (2023 - 2024) } % Text to appear in the footer, leave this command empty for no footer text
+
 \setcounter{page}{1} % The page number of the first page, set this to a higher number if the article is to be part of an issue or larger work
 
 \usepackage{hyperref} % Add this in the preamble
@@ -72,7 +74,7 @@
 %	ARTICLE CONTENTS
 %----------------------------------------------------------------------------------------
 
-\section{Introduction}
+\section{I.	Introduction}
 
 Indoor localization has emerged as a critical technology in the era of smart environments, enabling a myriad of applications from indoor navigation to asset tracking and augmented reality. Despite its potential, achieving reliable and accurate indoor localization remains a challenge due to the complex dynamics and signal attenuation within indoor spaces. Traditional Global Positioning System (GPS) technologies falter indoors, necessitating alternative approaches that can navigate the intricacies of indoor environments.
 
@@ -80,7 +82,7 @@ Enter WiSLAM: a novel approach that synergizes WiFi-based sensing with Simultane
 
 This article delves into the development and implementation of WiSLAM, exploring its theoretical foundations, system architecture, and the innovative integration of WiFi signals with SLAM algorithms. Through extensive experimentation in varied indoor settings, we demonstrate the capabilities of WiSLAM in achieving superior localization precision and mapping detail. Our research contributes to the evolving landscape of indoor localization technologies, offering insights and directions for future advancements in this field.
 
-\section{Presentation of the Problem}
+\section{II.	Presentation of the Problem}
 
 The quest for precise indoor localization remains a formidable challenge, driving extensive research and innovation. Traditional methods, including WiFi fingerprinting, Bluetooth beacons, and visual markers, offer partial solutions but come with inherent limitations. WiFi fingerprinting, while widely accessible, demands exhaustive calibration and is highly susceptible to environmental fluctuations. Bluetooth beacons provide a more stable alternative but require significant infrastructure investment. Visual markers, on the other hand, necessitate unobstructed visibility and consistent lighting, limiting their applicability.
 
@@ -89,38 +91,49 @@ Simultaneous Localization and Mapping (SLAM), a technique originally honed in th
 The scholarly landscape reveals a spectrum of endeavors to meld WiFi with SLAM, utilizing Received Signal Strength Indicator (RSSI) values to pinpoint access points and facilitate mapping. Yet, these initiatives often grapple with the dynamic and complex signal behavior characteristic of indoor settings.
 
 This research introduces WiSLAM, an innovative fusion of SLAM's mapping precision with the widespread availability of WiFi, designed to surmount the aforementioned obstacles. WiSLAM leverages advanced algorithms to refine the integration of WiFi signal strength into the SLAM framework, promising a scalable, cost-efficient, and markedly accurate approach to indoor localization. Through this endeavor, we aim to address the critical gaps in current methodologies, setting a new benchmark for indoor navigation systems.
+%------------------------------------------------
+
+\section{III. Related Work}
+
+Indoor localization systems have evolved significantly over the past decade, with various approaches being explored to overcome the limitations of GPS in indoor environments. Traditional methods such as RSSI fingerprinting, time of flight, and angle of arrival have been widely used but often suffer from issues related to scalability, accuracy, and environmental dynamics.
+
+SLAM has gained prominence as a robust method for indoor localization and mapping, with numerous algorithms developed for visual, LiDAR, and multimodal SLAM. Visual SLAM utilizes camera data to track features and build maps, while LiDAR SLAM relies on laser scans to generate precise point clouds. Multimodal SLAM combines data from multiple sensors to enhance accuracy and robustness.
+
+Recent advancements have seen the integration of WiFi signals into SLAM algorithms, leading to the development of WiFi-SLAM and related techniques. These approaches leverage the ubiquitous presence of WiFi infrastructure to provide additional data points for localization, enhancing the performance of traditional SLAM methods in complex indoor environments.
+
+Our work builds on these advancements by introducing WiSLAM, which combines the strengths of WiFi-based localization and SLAM to create a robust, scalable, and accurate indoor localization system. Through detailed experiments and analysis, we demonstrate WiSLAM's superiority in various indoor scenarios, paving the way for its application in real-world environments.
 
 %------------------------------------------------
 
-\section{Methodology}
+\section{IV. Methodology}
 
 In our research on "WiSLAM: Improving Indoor Localization Systems through SLAM using WiFi," we systematically position our work within the broader context of indoor localization and SLAM technologies. This section outlines our approach in four key steps, adhering to the provided specifications.
 
-\subsection{Current State of Knowledge}
+\subsection{A.	Current State of Knowledge}
 Indoor localization is a rapidly evolving field, with SLAM technologies at its forefront. Algorithms such as Extended Kalman Filter SLAM, Graph-Based SLAM, and FastSLAM have revolutionized the ability of autonomous systems to map and locate themselves within unknown environments. The recent integration of WiFi signals into SLAM processes, known as WiSLAM, has opened new avenues for overcoming the limitations of traditional approaches, especially in indoor environments where GPS is ineffective.
 
-\subsection{Problem Definition and Objectives}
+\subsection{B.	Problem Definition and Objectives}
 The primary objective of this study is to enhance indoor environment mapping and achieve accurate user localization within a building using the WiSLAM system. By integrating WiFi signals with SLAM technologies, we aim to address the limitations of traditional localization methods in indoor settings, where GPS signals are unreliable.
 
-\subsection{Experimental Design}
+\subsection{C.	Experimental Design}
 Our experimental setup involved a controlled indoor environment with dimensions of 20x30 meters. We strategically placed ten WiFi access points throughout the space to ensure comprehensive coverage. The data collection protocol entailed measuring RSSI values at multiple locations within the environment, with a sampling frequency of 1 Hz to capture the variability of WiFi signal strength over time.
 
-\subsection{Data Processing}
+\subsection{D.	Data Processing}
 The data preprocessing phase involved filtering out erroneous RSSI measurements and converting the RSSI values into distance estimates using a path loss model. We employed triangulation algorithms to estimate the positions of the WiFi access points and utilized Graph-Based SLAM algorithms to construct a detailed model of the indoor environment.
 
-\subsection{Performance Evaluation}
+\subsection{E.	Performance Evaluation}
 We evaluated the performance of the WiSLAM system using several metrics, including average localization error (measured in meters), mapping error, and computation time. These metrics were assessed through positioning campaigns within the mapped environment, where the actual positions of test subjects were compared against their estimated positions derived from the WiSLAM system.
 
-\subsection{Results and Analysis}
+\subsection{F.	Results and Analysis}
 The experimental results, presented in tables and graphical formats, demonstrated the WiSLAM system's capability to accurately map indoor environments and localize users within them. Our analysis revealed that the system's performance is influenced by factors such as the number of WiFi access points and their arrangement, as well as the density of measurement locations. Despite its strengths in improving localization accuracy and mapping precision, we also discuss the limitations of our approach, including its dependency on the stability of WiFi signals.
 
-\subsection{Comparison to the State of the Art}
+\subsection{G.	Comparison to the State of the Art}
 Comparative analysis with existing localization and mapping approaches highlighted the innovative contributions of the WiSLAM system. Unlike traditional SLAM methods that rely solely on visual or LiDAR data, WiSLAM's integration of WiFi signals offers a more robust solution for indoor environments. Our system demonstrates significant improvements in localization accuracy and environmental mapping, setting a new benchmark for indoor navigation technologies.
 
-\subsection{Related Domains}
+\subsection{H.	Related Domains}
 Our research draws on advancements in several related fields, including signal processing, sensor fusion, and machine learning. Signal processing is crucial for analyzing and interpreting WiFi signals, while sensor fusion allows for the coherent integration of data from diverse sources (cameras, LiDAR, WiFi). Machine learning, particularly deep neural networks, plays an increasingly significant role in enhancing the accuracy of SLAM systems by enabling better interpretation of complex environmental data.
 
-\subsection{Existing Solutions}
+\subsection{F.	Existing Solutions}
 Among the myriad SLAM approaches, two stand out for their relevance to our WiSLAM project:
 
 \begin{enumerate}
@@ -128,7 +141,7 @@ Among the myriad SLAM approaches, two stand out for their relevance to our WiSLA
 	\item \textbf{RTAB-Map}: Designed for large-scale and long-term SLAM applications, RTAB-Map excels in real-time loop closure detection. Its flexibility and graph-based approach are ideal for complex indoor environments.
 \end{enumerate}
 
-\subsection{Selection of Pertinent Solutions}
+\subsection{G.	Selection of Pertinent Solutions}
 Considering the specific challenges of indoor localization, such as the need for high accuracy and the limitations of GPS technology indoors, ORB-SLAM and RTAB-Map emerge as the most suitable solutions. Their integration with WiFi technologies for the development of WiSLAM aims to leverage the ubiquitous availability and robustness of WiFi signals to enhance the precision and reliability of indoor localization.
 
 In summary, our methodology involves assessing the current state of SLAM technologies and incorporating advancements from related fields to develop an innovative WiSLAM system. By building on the strengths of ORB-SLAM and RTAB-Map, and combining them with the capabilities of WiFi signals, we aim to establish a new standard for accurate and reliable indoor localization.
@@ -140,9 +153,9 @@ Referencing a figure using its label: Figure \ref{fig:tcanther}.
 	\caption{Visual inertial odometry measurements, corrupted by motion drift, are input into WAIS (WiFi Assisted Indoor SLAM)'s module. Combining these measurements with Wi-Fi measurements from WiROS provides online corrected odometry measurements. Lidar Inertial odometry or wheel odometry can also be used.}	\label{fig:tcanther}
 \end{figure}
 
-\section{Applications and uses cases}
+\section{V.	Applications and uses cases}
 
-\subsection{Augmented Reality (AR)}
+\subsection{A.	Augmented Reality (AR)}
 WiSLAM significantly enhances AR experiences by providing precise indoor localization, enabling applications such as interactive gaming environments and virtual tours. In educational settings, AR can leverage WiSLAM for interactive learning experiences, allowing students to explore historical sites or scientific concepts within controlled indoor environments.
 
 \begin{figure}[h]
@@ -152,24 +165,24 @@ WiSLAM significantly enhances AR experiences by providing precise indoor localiz
     \label{fig:download}
 \end{figure}
 
-\subsection{Retail and Customer Navigation}
+\subsection{B.	Retail and Customer Navigation}
 \textbf{Retail Environments:} WiSLAM enhances customer experiences in large retail stores by offering precise navigation to products, departments, and promotions, improving shopping efficiency and satisfaction.
 
 \textbf{Airports and Transportation Hubs:} WiSLAM guides passengers through complex terminals, ensuring timely arrival at gates or platforms, and reducing travel stress.
 
 \textbf{Museums and Exhibitions:} WiSLAM provides personalized tours, guiding visitors through exhibits based on preferences and offering detailed information about displayed items.
 
-\subsection{Emergency Response}
+\subsection{C.	Emergency Response}
 \textbf{Search and Rescue Operations:} WiSLAM aids in rescue operations by providing accurate maps and real-time locations of individuals in emergency scenarios, such as building collapses or fires.
 
 \textbf{Facility Management:} WiSLAM enhances emergency planning and response by mapping indoor spaces and identifying evacuation routes, ensuring occupant safety during emergencies.
 
-\subsection{Healthcare Facilities}
+\subsection{D.	Healthcare Facilities}
 \textbf{Patient and Equipment Tracking:} WiSLAM tracks the location of patients, staff, and critical equipment within hospitals, improving operational efficiency and patient care.
 
 \textbf{Assisted Navigation:} WiSLAM assists patients and visitors in navigating large hospital complexes, ensuring they reach their destinations without confusion or delay.
 
-\subsection{Industrial and Workplace Efficiency}
+\subsection{E.	Industrial and Workplace Efficiency}
 \textbf{Factory Floor Management:} WiSLAM optimizes factory operations by tracking equipment and personnel, ensuring efficient workflow and safety compliance.
 
 \begin{figure}[h]
@@ -183,7 +196,7 @@ WiSLAM significantly enhances AR experiences by providing precise indoor localiz
 
 These applications demonstrate WiSLAM's versatility and potential in various domains, improving navigation, safety, and operational efficiency across multiple indoor environments.
 
-\section{Experimentation and Results}
+\section{VI.	Experimentation and Results}
 
 \subsection{Experimentation Methodology}
 Our experimentation was designed to evaluate the performance of the WiSLAM system, which integrates ORB-SLAM and RTAB-Map with WiFi signal processing for enhanced indoor localization. We conducted a series of tests in a controlled indoor environment with known WiFi signal characteristics. The tests were designed to simulate various real-world conditions, including signal interference, physical obstructions, and dynamic changes in the environment.
@@ -195,15 +208,15 @@ Our experimentation was designed to evaluate the performance of the WiSLAM syste
 	\item \textbf{Efficiency Test}: Assessed the computational efficiency of WiSLAM in terms of processing time and resource utilization.
 \end{enumerate}
 
-\subsection{Real-time WiFi measurement processing}
+\subsection{A.	Real-time WiFi measurement processing}
 The lack id compute-effect bearings estimation framework and wireless callibration methods still preclude the widespread adoption of Wi-Fi sensing for SLAM. In this section, we delineate two contributions in WAIS. First, a resource-efficient and accurate bearing estimation algorithm, automated wireless calibration techniques to furnish bias-free bearing estimates. Additionally, to enable broader adoption of Wi-Fi for SLAM, we open source these con- tributions in addition to incorporating our Wi-Fi sensor with the ROS framework to provide real-time and time-synchronized Wi-Fi measurements
 
-\subsection{Dual layered optimization}
+\subsection{B.	Dual layered optimization}
 The first idea to integrate Wi-Fi measurements would be to co-optimize them along with visual measurements in a tightly coupled fashion. For instance, by incorporating them within the factor graph of an available SLAM system. Unfortunately, the discovery and addition of new APs and global drift corrections introduce brief periods of instability (order of a few seconds) to the robot’s trajectory estimates. These instabilities can introduce large computation overheads as they may also demand corrections to the tracked visual landmarks and map.
 
 Instead, WAIS proposes a dual-layered design to tackle local and global drifts independently. The local drift optimizer corrects the robot’s trajectory and builds a map based on visual features. The finer resolution of visual features allows for fine-grained corrections for a few tens of meters. The baton is then passed to WAIS’s Wi-Fi graph to handle larger errors due to global drift. This factor graph optimizer relies on the bearings of the incoming Wi-Fi signals. These bearing measurements allow the robot to anchor itself to the environment and adequately correct for the global drifts. But unlike prior work, WAIS does not use end-to-end optimization, instead opts to use incremental smoothing and mapping (iSAM) to provide real-time pose estimates.
 
-\subsection{Building the Wi-Fi-Graph}
+\subsection{C.	Building the Wi-Fi-Graph}
 
 We build the Wi-Fi factor graph discussed in the previous section as shown in Fig. 2. Specifically, consider the state space at time $t$, $S_t$. It is a set of robot poses and access point locations over $t$ time steps.
 
@@ -214,7 +227,7 @@ We build the Wi-Fi factor graph discussed in the previous section as shown in Fi
 	\label{fig:WiFi-Graph-measurement}
 \end{figure}
 
-\subsection{Efficient Bearing Estimation}
+\subsection{D.	Efficient Bearing Estimation}
 In indoor environments, the primary reason for inaccuracies in the bearing measurements is multipath. A Wi-Fi signal, with wavelength A, is broadcast, and multiple reflections of the signal
 
 \begin{figure}[h]
@@ -227,7 +240,7 @@ In indoor environments, the primary reason for inaccuracies in the bearing measu
 (multipath) along with the direct path, impinge at the receiver as shown in Fig. 3 (b). The 'direct path' (solid line) is the only path helpful in estimating the bearing (8) to the source, and the rest of the 'reflected paths' (dotted lines) are the cause for erroneous bearing estimates.
 To understand these effects, we provide a simple mathematical model. The receiver measures, at time t, a complex-valued channel state information (CSI) describing the phase delay and attenuation across each of the Munt receiver antennas and Nub orthogonal frequencies 
 
-\subsection{Results}
+\subsection{E.	Results}
 The results of our experimentation are presented in a series of graphs and tables, illustrating the performance of WiSLAM under various test conditions.
 
 \begin{figure*}[ht]
@@ -253,27 +266,100 @@ The results of our experimentation are presented in a series of graphs and table
 \end{table*}
 
 
-\subsection{Discussion and Limitations}
+\subsection{F.	Discussion and Limitations}
 While WiSLAM demonstrated superior accuracy and robustness compared to baseline SLAM systems, it is important to acknowledge the limitations of our study. The controlled nature of our test environment may not fully capture the complexity of real-world indoor spaces. Additionally, the performance of WiSLAM is heavily dependent on the quality and consistency of WiFi signals, which can vary significantly in different settings.
 
-\subsection{Implications and Future Work}
+\subsection{G.	Implications and Future Work}
 Despite these limitations, the results of our experimentation suggest that WiSLAM has significant potential for improving indoor localization in practical applications. The integration of WiFi signals with SLAM technologies offers a promising avenue for overcoming the limitations of GPS technology indoors. Future work will focus on further refining the WiSLAM system, exploring its application in more complex environments, and extending its capabilities to support a wider range of indoor localization tasks.
 
 
-\section{Conclusion and Perspectives}
+\section{VII.	Conclusion}
 In this study, we introduced WiSLAM, an innovative system that integrates WiFi signals with SLAM technologies to enhance indoor localization accuracy. Our experimentation demonstrated that WiSLAM outperforms traditional SLAM systems in terms of accuracy and robustness, especially in environments where GPS technology is ineffective. However, we acknowledge the limitations of our study, particularly the controlled nature of our test environment and the dependency on WiFi signal quality.
 
 The implications of our work are significant for the field of indoor localization. By leveraging the ubiquity of WiFi signals, WiSLAM presents a viable solution to the challenges posed by indoor environments. This research opens up new avenues for further exploration, particularly in applying WiSLAM to more complex and dynamic indoor spaces. Future work will focus on refining the WiSLAM system, improving its adaptability to varying signal conditions, and expanding its application scope.
 
 The potential for WiSLAM to revolutionize indoor navigation and location-based services is immense. As we continue to refine and test our system, we anticipate new opportunities for innovation in areas such as augmented reality, emergency response, and smart building management.
 
-\section{Bibliography}
-
 %----------------------------------------------------------------------------------------
 %	 REFERENCES
 %----------------------------------------------------------------------------------------
 
 \printbibliography % Output the bibliography
+
+\begin{thebibliography}{99}
+
+\bibitem{DurrantWhyte2006SLAM}
+Hugh Durrant-Whyte and Tim Bailey. 2006. Simultaneous Localization and Mapping: Part I. \textit{IEEE Robotics \& Automation Magazine} 13, 2 (2006), 99--110.
+
+\bibitem{Thrun2002SLAM}
+Sebastian Thrun. 2002. Robotic Mapping: A Survey. In \textit{Exploring Artificial Intelligence in the New Millennium}. Science and Technology Books, 1--35.
+
+\bibitem{Montemerlo2002FastSLAM}
+Michael Montemerlo, Sebastian Thrun, Daphne Koller, and Ben Wegbreit. 2002. FastSLAM: A Factored Solution to the Simultaneous Localization and Mapping Problem. In \textit{AAAI/IAAI}. 593--598.
+
+\bibitem{He2016WiFi}
+Shen He and S. H. Gary Chan. 2016. Wi-Fi Fingerprint-Based Indoor Positioning: Recent Advances and Comparisons. \textit{IEEE Communications Surveys \& Tutorials} 18, 1 (2016), 466--490.
+
+\bibitem{Rajagopal2014VisualSLAM}
+Naveen Rajagopal, Archan Misra, and Rajesh Krishna Balan. 2014. Visual SLAM and WiFi Fingerprinting for Indoor Localization: A Comparative Study. In \textit{2014 International Conference on Indoor Positioning and Indoor Navigation (IPIN)}. IEEE.
+
+\bibitem{ahmad2020carmap}
+Fawad Ahmad, Hang Qiu, Ray Eells, Fan Bai, and Ramesh Govindan. 2020.
+CarMap: Fast 3D Feature Map Updates for Automobiles. In \textit{NSDI}. 1063--1081.
+
+\bibitem{arshad2021role}
+Saba Arshad and Gon-Woo Kim. 2021. Role of deep learning in loop closure
+detection for visual and lidar slam: A survey. \textit{Sensors} 21, 4 (2021), 1243.
+
+\bibitem{arun2022p2slam}
+Aditya Arun, Roshan Ayyalasomayajula, William Hunter, and Dinesh Bharadia.
+2022. P2SLAM: Bearing based WiFi SLAM for Indoor Robots. \textit{IEEE Robotics and
+Automation Letters} (2022).
+
+\bibitem{asus2022router}
+ASUS. 2022. Asus RT-AC86U router. \url{https://www.asus.com/us/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ac86u/}
+
+\bibitem{ayyalasomayajula2020deep}
+Roshan Ayyalasomayajula, Aditya Arun, Chenfeng Wu, Sanatan Sharma, Abhishek Rajkumar Sethi, Deepak Vasisht, and Dinesh Bharadia. 2020. Deep learning
+based wireless localization for indoor navigation. In \textit{Proceedings of the 26th Annual
+International Conference on Mobile Computing and Networking}. 1--14.
+
+\bibitem{ayyalasomayajula2018bloc}
+Roshan Ayyalasomayajula, Deepak Vasisht, and Dinesh Bharadia. 2018. BLoc: CSI-based accurate localization for BLE tags. In \textit{Proceedings of the 14th International
+Conference on emerging Networking EXperiments and Technologies}. 126--138.
+
+\bibitem{benali2022edge}
+Ali J Ben Ali, Marziye Kouroshli, Sofiya Semenova, Zakieh Sadat Hashemifar,
+Steven Y Ko, and Karthik Dantu. 2022. Edge-SLAM: Edge-assisted visual simultaneous localization and mapping. \textit{ACM Transactions on Embedded Computing
+Systems} 22, 1 (2022), 1--31.
+
+\bibitem{boroushaki2022fusebot}
+Tara Boroushaki, Laura Dodds, Nazish Naeem, and Fadel Adib. 2022. FuseBot:
+RF-Visual Mechanical Search. \textit{Robotics: Science and Systems 2022} (2022).
+
+\bibitem{chi2022wi}
+Guoxuan Chi, Zheng Yang, Jingao Xu, Chenshu Wu, Jialin Zhang, Jianzhe Liang,
+and Yunhao Liu. 2022. Wi-drone: wi-fi-based 6-DoF tracking for indoor drone
+flight control. In \textit{Proceedings of the 20th Annual International Conference on Mobile
+Systems, Applications and Services}. 56--68.
+
+\bibitem{cieslewski2018data}
+Titus Cieslewski, Siddharth Choudhary, and Davide Scaramuzza. 2018. Data-efficient decentralized visual SLAM. In \textit{2018 IEEE international conference on
+robotics and automation (ICRA)}. IEEE, 2466--2473.
+
+\bibitem{ieee2007standard}
+IEEE Computer Society LAN/MAN Standards Committee et al. 2007. IEEE Standard for Information technology-Telecommunications and information exchange
+between systems-Local and metropolitan area networks-Specific requirements
+Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY)
+Specifications. \textit{IEEE Std 802.11}ˆ (2007).
+
+\bibitem{ferris2007wifi}
+Brian Ferris, Dieter Fox, and Neil D Lawrence. 2007. Wifi-slam using gaussian
+process latent variable models. In \textit{IJCAI}, Vol. 7. 2480--2485.
+
+% Add more references as needed
+
+\end{thebibliography}
 
 %----------------------------------------------------------------------------------------
 
