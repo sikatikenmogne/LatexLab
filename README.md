@@ -2,6 +2,8 @@
 
 LatexLab is a comprehensive LaTeX project aimed at providing an extensive suite of tools and templates for academic writing, presentations, and publications. Designed with simplicity and efficiency in mind, LatexLab caters to both beginners and advanced LaTeX users, offering a wide range of features to enhance the document creation process.
 
+All the templates provided in LatexLab are sourced from [latextemplates.com](http://www.latextemplates.com), a comprehensive collection of high-quality LaTeX templates for a variety of document types. We encourage users to visit their website for more templates and detailed documentation on customization and usage.
+
 ## :rocket: Getting Started
 
 To get started with LatexLab, follow these steps:
