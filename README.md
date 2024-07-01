@@ -2,7 +2,7 @@
 
 LatexLab is a comprehensive LaTeX project aimed at providing an extensive suite of tools and templates for academic writing, presentations, and publications. Designed with simplicity and efficiency in mind, LatexLab caters to both beginners and advanced LaTeX users, offering a wide range of features to enhance the document creation process.
 
-## Features
+## ✅ Features
 
 - **Template Collection**: A vast array of templates for various academic and professional documents, including articles, reports, theses, and slides.
 - **Collaboration Tools**: Integrated tools to facilitate collaboration among multiple authors, including version control and commenting.
@@ -11,7 +11,7 @@ LatexLab is a comprehensive LaTeX project aimed at providing an extensive suite 
 - **Preview Mode**: Real-time preview of LaTeX documents, allowing for quick edits and adjustments.
 - **Export Options**: Support for exporting documents in multiple formats, including PDF, HTML, and ePub.
 
-## Getting Started
+## :rocket: Getting Started
 
 To get started with LatexLab, follow these steps:
 
@@ -39,15 +39,15 @@ pdflatex yourdocument.tex
 
 View Your Document: Open the generated PDF file with your preferred PDF viewer.
 
-## Contributing
+## :rocket: Contributing
 
 Contributions to LatexLab are welcome! Whether it's adding new templates, improving the documentation, or reporting issues, your help is appreciated. Please read the CONTRIBUTING.md file for guidelines on how to contribute.
 
-## License
+## :page_with_curl: License
 
 LatexLab is licensed under the MIT License. See the LICENSE file for more details.
 
-## Contact
+## :email: Contact
 
 For questions, suggestions, or support, please open an issue in the GitHub repository or contact the project maintainers directly.
 
